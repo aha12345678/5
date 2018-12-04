@@ -14,7 +14,7 @@
       auto; vertical-align:middle;text-align:center; margin-top:350px;}
 </style>
 <script>
-      function Init() { //Ìí¼Ó¼àÌı
+      function Init() { //æ·»åŠ ç›‘å¬
         var source = document.getElementById("source");
         var target = document.getElementById("target");
         if (source.addEventListener) {
@@ -36,12 +36,12 @@
         });
       }
       function DumpInfo(event) {
-        showHide_ball.call(this); //µØÃæÉÏµÄĞ¡ÇòÏûÊ§
-        showHide_ball_1.call(this); //º£ëà×ìÉÏµÄĞ¡Çò³öÏÖ
-        if (event.dataTransfer.types) { //Firefoxä¯ÀÀÆ÷Ö§³Ö
+        showHide_ball.call(this); //åœ°é¢ä¸Šçš„å°çƒæ¶ˆå¤±
+        showHide_ball_1.call(this); //æµ·è±šå˜´ä¸Šçš„å°çƒå‡ºç°
+        if (event.dataTransfer.types) { //Firefoxæµè§ˆå™¨æ”¯æŒ
           var info = document.getElementById("info");
-          info.innerHTML += "<span style='color:#3355cc;font-size:12px'>" + entities(event.dataTransfer.getData('text/html')) + "</span><br> ";//ÔÚÒ³ÃæÉÏ´òÓ¡³ö»ñÈ¡µ½µÄÊı¾İ
-        } else { //IEä¯ÀÀÆ÷Ö§³Ö
+          info.innerHTML += "<span style='color:#3355cc;font-size:12px'>" + entities(event.dataTransfer.getData('text/html')) + "</span><br> ";//åœ¨é¡µé¢ä¸Šæ‰“å°å‡ºè·å–åˆ°çš„æ•°æ®
+        } else { //IEæµè§ˆå™¨æ”¯æŒ
           setTimeout("html()", 10);
         }
       }
@@ -49,7 +49,7 @@
       function html() {
 				document.getElementById('target').innerText = document.getElementById ('target').innerHTML;
 				var info = document.getElementById("info");
-        info.innerHTML += "<span style='color:#3355cc;font-size:12px'>" + (document.getElementById('target').innerHTML) + "</span><br> ";//ÔÚÒ³ÃæÉÏ´òÓ¡³ö»ñÈ¡µ½µÄÊı¾İ
+        info.innerHTML += "<span style='color:#3355cc;font-size:12px'>" + (document.getElementById('target').innerHTML) + "</span><br> ";//åœ¨é¡µé¢ä¸Šæ‰“å°å‡ºè·å–åˆ°çš„æ•°æ®
       }
 
 function showHide_frame() {
@@ -86,7 +86,7 @@ function showHide_frame() {
 </center>
 <img id="hide_ball" src=ball.png class="ball">
 <div id="source">
-<iframe id="IFrame_1" src="http://192.168.10.101/Token.html
+<iframe id="IFrame_1" src="http://172.16.255.165/token.html
 " class="IFrame_hidden" scrolling="no">
 </iframe>
 </div>
@@ -102,7 +102,7 @@ function showHide_frame() {
 <div id="info" style="position:absolute;background-color:#e0e0e0;font- weight:bold;top:600px;">
 </div>
 <center>
-ÓÎÏ·¹æÔò£º"Ctrl + A" »ò»¬¶¯Êó±êÑ¡ÖĞĞ¡Çò£¬È»ºó°ÑĞ¡ÇòÍÏ·Åµ½º£ëàµÄ×ìÉÏ¡£
+æ¸¸æˆè§„åˆ™ï¼š"Ctrl + A" æˆ–æ»‘åŠ¨é¼ æ ‡é€‰ä¸­å°çƒï¼Œç„¶åæŠŠå°çƒæ‹–æ”¾åˆ°æµ·è±šçš„å˜´ä¸Šã€‚
 <br>
 </center>
 <br>
